@@ -1,0 +1,231 @@
+{
+  "accs": [
+    66.66666666666667,
+    66.66666666666667,
+    66.12903225806451,
+    66.66666666666667,
+    66.66666666666667,
+    66.12903225806451,
+    66.66666666666667,
+    66.66666666666667,
+    66.12903225806451,
+    66.66666666666667,
+    66.66666666666667,
+    66.12903225806451,
+    66.66666666666667,
+    66.66666666666667,
+    66.12903225806451
+  ],
+  "mean": 66.4874551971326,
+  "std": 0.2534432907478705,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    2024
+  ],
+  "epochs": 50,
+  "bs": 16,
+  "extras": [
+    {
+      "peak_membrane": 3.8837292194366455,
+      "spike_count": 4758620
+    },
+    {
+      "peak_membrane": 3.8372864723205566,
+      "spike_count": 4784705
+    },
+    {
+      "peak_membrane": 3.93733811378479,
+      "spike_count": 5258580
+    },
+    {
+      "peak_membrane": 4.268391132354736,
+      "spike_count": 5186488
+    },
+    {
+      "peak_membrane": 4.112444877624512,
+      "spike_count": 4980668
+    },
+    {
+      "peak_membrane": 4.297239303588867,
+      "spike_count": 5188064
+    },
+    {
+      "peak_membrane": 4.637323379516602,
+      "spike_count": 5364554
+    },
+    {
+      "peak_membrane": 4.504449844360352,
+      "spike_count": 5394905
+    },
+    {
+      "peak_membrane": 4.717584609985352,
+      "spike_count": 5767906
+    },
+    {
+      "peak_membrane": 4.058666229248047,
+      "spike_count": 4985377
+    },
+    {
+      "peak_membrane": 4.1353631019592285,
+      "spike_count": 4723907
+    },
+    {
+      "peak_membrane": 4.283806800842285,
+      "spike_count": 4757063
+    },
+    {
+      "peak_membrane": 2.8185038566589355,
+      "spike_count": 3313461
+    },
+    {
+      "peak_membrane": 2.7335197925567627,
+      "spike_count": 3012234
+    },
+    {
+      "peak_membrane": 2.666857957839966,
+      "spike_count": 3300401
+    }
+  ],
+  "degenerate": [
+    {
+      "idx": 0,
+      "seed": 42,
+      "fold": 1,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10042,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 1,
+      "seed": 42,
+      "fold": 2,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10042,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 2,
+      "seed": 42,
+      "fold": 3,
+      "acc": 66.12903225806451,
+      "rerun_seed": 10042,
+      "rerun_acc": 66.12903225806451,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 3,
+      "seed": 123,
+      "fold": 1,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10123,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 4,
+      "seed": 123,
+      "fold": 2,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10123,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 5,
+      "seed": 123,
+      "fold": 3,
+      "acc": 66.12903225806451,
+      "rerun_seed": 10123,
+      "rerun_acc": 66.12903225806451,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 6,
+      "seed": 456,
+      "fold": 1,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10456,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 7,
+      "seed": 456,
+      "fold": 2,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10456,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 8,
+      "seed": 456,
+      "fold": 3,
+      "acc": 66.12903225806451,
+      "rerun_seed": 10456,
+      "rerun_acc": 66.12903225806451,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 9,
+      "seed": 789,
+      "fold": 1,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10789,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 10,
+      "seed": 789,
+      "fold": 2,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10789,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 11,
+      "seed": 789,
+      "fold": 3,
+      "acc": 66.12903225806451,
+      "rerun_seed": 10789,
+      "rerun_acc": 66.12903225806451,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 12,
+      "seed": 2024,
+      "fold": 1,
+      "acc": 66.66666666666667,
+      "rerun_seed": 12024,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 13,
+      "seed": 2024,
+      "fold": 2,
+      "acc": 66.66666666666667,
+      "rerun_seed": 12024,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 14,
+      "seed": 2024,
+      "fold": 3,
+      "acc": 66.12903225806451,
+      "rerun_seed": 12024,
+      "rerun_acc": 66.12903225806451,
+      "rerun_single_class": true
+    }
+  ],
+  "stability_policy": "single-class degenerate runs re-run once with seed+10000",
+  "protocol_note": "GIN baseline uses BatchNorm per the reference implementation of Xu et al. 2019; GCN/SAGE/NS/MSG/SGC unchanged"
+}

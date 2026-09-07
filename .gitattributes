@@ -1,0 +1,16 @@
+# Shell scripts must keep LF endings: with CRLF they fail on Linux/macOS with
+# "bad interpreter" or syntax errors.
+*.sh text eol=lf
+
+# Normalise text files on commit; keep binary artefacts untouched.
+*.py   text eol=lf
+*.tex  text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.bib  text eol=lf
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
+
+*.pdf binary
+*.png binary
+*.jpg binary

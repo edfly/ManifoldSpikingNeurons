@@ -1,0 +1,231 @@
+{
+  "accs": [
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882,
+    59.56873315363882
+  ],
+  "mean": 59.56873315363883,
+  "std": 1.4210854715202004e-14,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    2024
+  ],
+  "epochs": 50,
+  "bs": 16,
+  "extras": [
+    {
+      "peak_membrane": 7.723777770996094,
+      "spike_count": 12145497
+    },
+    {
+      "peak_membrane": 7.475299835205078,
+      "spike_count": 14393766
+    },
+    {
+      "peak_membrane": 12.016716003417969,
+      "spike_count": 13276782
+    },
+    {
+      "peak_membrane": 9.49348258972168,
+      "spike_count": 27391453
+    },
+    {
+      "peak_membrane": 6.8463850021362305,
+      "spike_count": 19422337
+    },
+    {
+      "peak_membrane": 10.050826072692871,
+      "spike_count": 23933350
+    },
+    {
+      "peak_membrane": 7.447552680969238,
+      "spike_count": 9118804
+    },
+    {
+      "peak_membrane": 9.769305229187012,
+      "spike_count": 12455553
+    },
+    {
+      "peak_membrane": 11.055156707763672,
+      "spike_count": 15006349
+    },
+    {
+      "peak_membrane": 11.597305297851562,
+      "spike_count": 31347682
+    },
+    {
+      "peak_membrane": 8.264348030090332,
+      "spike_count": 33781058
+    },
+    {
+      "peak_membrane": 9.649754524230957,
+      "spike_count": 40984538
+    },
+    {
+      "peak_membrane": 5.817811489105225,
+      "spike_count": 12828525
+    },
+    {
+      "peak_membrane": 8.025435447692871,
+      "spike_count": 23189382
+    },
+    {
+      "peak_membrane": 8.286575317382812,
+      "spike_count": 20129423
+    }
+  ],
+  "degenerate": [
+    {
+      "idx": 0,
+      "seed": 42,
+      "fold": 1,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10042,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 1,
+      "seed": 42,
+      "fold": 2,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10042,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 2,
+      "seed": 42,
+      "fold": 3,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10042,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 3,
+      "seed": 123,
+      "fold": 1,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10123,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 4,
+      "seed": 123,
+      "fold": 2,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10123,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 5,
+      "seed": 123,
+      "fold": 3,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10123,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 6,
+      "seed": 456,
+      "fold": 1,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10456,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 7,
+      "seed": 456,
+      "fold": 2,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10456,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 8,
+      "seed": 456,
+      "fold": 3,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10456,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 9,
+      "seed": 789,
+      "fold": 1,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10789,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 10,
+      "seed": 789,
+      "fold": 2,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10789,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 11,
+      "seed": 789,
+      "fold": 3,
+      "acc": 59.56873315363882,
+      "rerun_seed": 10789,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 12,
+      "seed": 2024,
+      "fold": 1,
+      "acc": 59.56873315363882,
+      "rerun_seed": 12024,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 13,
+      "seed": 2024,
+      "fold": 2,
+      "acc": 59.56873315363882,
+      "rerun_seed": 12024,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 14,
+      "seed": 2024,
+      "fold": 3,
+      "acc": 59.56873315363882,
+      "rerun_seed": 12024,
+      "rerun_acc": 59.56873315363882,
+      "rerun_single_class": true
+    }
+  ],
+  "stability_policy": "single-class degenerate runs re-run once with seed+10000",
+  "protocol_note": "GIN baseline uses BatchNorm per the reference implementation of Xu et al. 2019; GCN/SAGE/NS/MSG/SGC unchanged"
+}

@@ -1,0 +1,89 @@
+{
+  "accs": [
+    76.19047619047619,
+    68.25396825396825,
+    74.19354838709677,
+    74.60317460317461,
+    68.25396825396825,
+    74.19354838709677,
+    71.42857142857143,
+    66.66666666666667,
+    74.19354838709677,
+    66.66666666666667,
+    68.25396825396825,
+    74.19354838709677,
+    66.66666666666667,
+    69.84126984126983,
+    66.12903225806451
+  ],
+  "mean": 70.64857484212324,
+  "std": 3.493560562530591,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    2024
+  ],
+  "epochs": 50,
+  "bs": 16,
+  "degenerate": [
+    {
+      "idx": 0,
+      "seed": 42,
+      "fold": 1,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10042,
+      "rerun_acc": 76.19047619047619,
+      "rerun_single_class": false
+    },
+    {
+      "idx": 2,
+      "seed": 42,
+      "fold": 3,
+      "acc": 66.12903225806451,
+      "rerun_seed": 10042,
+      "rerun_acc": 74.19354838709677,
+      "rerun_single_class": false
+    },
+    {
+      "idx": 6,
+      "seed": 456,
+      "fold": 1,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10456,
+      "rerun_acc": 71.42857142857143,
+      "rerun_single_class": false
+    },
+    {
+      "idx": 9,
+      "seed": 789,
+      "fold": 1,
+      "acc": 66.66666666666667,
+      "rerun_seed": 10789,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 12,
+      "seed": 2024,
+      "fold": 1,
+      "acc": 66.66666666666667,
+      "rerun_seed": 12024,
+      "rerun_acc": 66.66666666666667,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 14,
+      "seed": 2024,
+      "fold": 3,
+      "acc": 66.12903225806451,
+      "rerun_seed": 12024,
+      "rerun_acc": 66.12903225806451,
+      "rerun_single_class": true
+    }
+  ],
+  "model": "HypGNN (HGCN-style, Chami et al. 2019)",
+  "manifold": "Poincare ball, d_h=16, c=1.0",
+  "stability_policy": "single-class degenerate runs re-run once with seed+10000"
+}

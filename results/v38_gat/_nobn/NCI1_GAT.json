@@ -1,0 +1,70 @@
+{
+  "accs": [
+    50.0,
+    50.07299270072993,
+    50.07299270072993,
+    50.0,
+    50.07299270072993
+  ],
+  "mean": 50.04379562043796,
+  "std": 0.035758974347199525,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    2024
+  ],
+  "epochs": 50,
+  "bs": 16,
+  "degenerate": [
+    {
+      "idx": 0,
+      "seed": 42,
+      "fold": 1,
+      "acc": 50.0,
+      "rerun_seed": 10042,
+      "rerun_acc": 50.0,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 1,
+      "seed": 42,
+      "fold": 2,
+      "acc": 50.07299270072993,
+      "rerun_seed": 10042,
+      "rerun_acc": 50.07299270072993,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 2,
+      "seed": 42,
+      "fold": 3,
+      "acc": 50.07299270072993,
+      "rerun_seed": 10042,
+      "rerun_acc": 50.07299270072993,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 3,
+      "seed": 123,
+      "fold": 1,
+      "acc": 50.0,
+      "rerun_seed": 10123,
+      "rerun_acc": 50.0,
+      "rerun_single_class": true
+    },
+    {
+      "idx": 4,
+      "seed": 123,
+      "fold": 2,
+      "acc": 50.07299270072993,
+      "rerun_seed": 10123,
+      "rerun_acc": 50.07299270072993,
+      "rerun_single_class": true
+    }
+  ],
+  "model": "GATGNN (Veli\u010dkovi\u0107 et al. 2018), heads=4 x 16",
+  "manifold": "Euclidean",
+  "stability_policy": "single-class degenerate runs re-run once with seed+10000"
+}

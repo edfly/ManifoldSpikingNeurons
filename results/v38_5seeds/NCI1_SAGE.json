@@ -1,0 +1,87 @@
+{
+  "accs": [
+    68.61313868613139,
+    67.22627737226277,
+    68.46715328467154,
+    68.83211678832117,
+    67.08029197080292,
+    68.24817518248175,
+    63.722627737226276,
+    67.81021897810218,
+    68.9051094890511,
+    61.02189781021898,
+    68.75912408759125,
+    69.34306569343066,
+    69.7080291970803,
+    68.97810218978103,
+    68.24817518248175
+  ],
+  "mean": 67.66423357664233,
+  "std": 2.239976201766775,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    2024
+  ],
+  "epochs": 50,
+  "bs": 16,
+  "extras": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "degenerate": [
+    {
+      "idx": 3,
+      "seed": 123,
+      "fold": 1,
+      "acc": 50.0,
+      "rerun_seed": 10123,
+      "rerun_acc": 68.83211678832117,
+      "rerun_single_class": false
+    },
+    {
+      "idx": 9,
+      "seed": 789,
+      "fold": 1,
+      "acc": 50.0,
+      "rerun_seed": 10789,
+      "rerun_acc": 61.02189781021898,
+      "rerun_single_class": false
+    },
+    {
+      "idx": 10,
+      "seed": 789,
+      "fold": 2,
+      "acc": 50.07299270072993,
+      "rerun_seed": 10789,
+      "rerun_acc": 68.75912408759125,
+      "rerun_single_class": false
+    },
+    {
+      "idx": 11,
+      "seed": 789,
+      "fold": 3,
+      "acc": 50.07299270072993,
+      "rerun_seed": 10789,
+      "rerun_acc": 69.34306569343066,
+      "rerun_single_class": false
+    }
+  ],
+  "stability_policy": "single-class degenerate runs re-run once with seed+10000",
+  "protocol_note": "GIN baseline uses BatchNorm per the reference implementation of Xu et al. 2019; GCN/SAGE/NS/MSG/SGC unchanged"
+}
