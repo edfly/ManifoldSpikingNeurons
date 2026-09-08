@@ -45,38 +45,44 @@ fail=0
 hr() { printf '%s\n' "------------------------------------------------------------"; }
 
 echo "============================================================"
-echo " 四重核验 (data / numbers / hyperparams / algorithm) @ $(date '+%F %T')"
+echo " 机器核验 (data / numbers / hyperparams / algorithm / GA / math) @ $(date '+%F %T')"
 echo "============================================================"
 
 echo
-echo "[1/4] 实验数据内部一致性 —— audit_v38_data.py"
+echo "[1/6] 实验数据内部一致性 —— audit_v38_data.py"
 hr
 "$PY" audit_v38_data.py 2>&1 | tail -3
 [ "${PIPESTATUS[0]}" -eq 0 ] || fail=1
 
 echo
-echo "[2/4] 论文表格数字 <-> 结果 JSON —— verify_v38_numbers.py"
+echo "[2/6] 论文表格数字 <-> 结果 JSON —— verify_v38_numbers.py"
 hr
 "$PY" verify_v38_numbers.py 2>&1 | grep -E "^RESULT|\[!!\]" | head -20
 "$PY" verify_v38_numbers.py >/dev/null 2>&1 || fail=1
 
 echo
-echo "[3/4] 论文超参数 <-> 运行时代码 —— verify_hyperparams.py"
+echo "[3/6] 论文超参数 <-> 运行时代码 —— verify_hyperparams.py"
 hr
 CUDA_VISIBLE_DEVICES=0 "$GPU" verify_hyperparams.py 2>&1 | grep -E "DRIFT|ALL HYPERPARAM|- " | head -20
 CUDA_VISIBLE_DEVICES=0 "$GPU" verify_hyperparams.py >/dev/null 2>&1 || fail=1
 
 echo
-echo "[4/4] Algorithm 1 机制 <-> 实现逻辑 —— verify_algorithm_mapping.py"
+echo "[4/6] Algorithm 1 机制 <-> 实现逻辑 —— verify_algorithm_mapping.py"
 hr
 "$PY" verify_algorithm_mapping.py 2>&1 | grep -E "FAIL|ALL [0-9]+ ALGORITHM|MISMATCH" | head -10
 "$PY" verify_algorithm_mapping.py >/dev/null 2>&1 || fail=1
 
 echo
-echo "[5/5] 图形摘要几何/字号/数据溯源 —— check_graphical_abstract.py"
+echo "[5/6] 图形摘要几何/字号/数据溯源 —— check_graphical_abstract.py"
 hr
 "$PY" check_graphical_abstract.py 2>&1 | grep -E "^RESULT|\[!!\]" | head -12
 "$PY" check_graphical_abstract.py >/dev/null 2>&1 || fail=1
+
+echo
+echo "[6/6] 数学主张 <-> 可执行代码 —— verify_math.py"
+hr
+"$PY" verify_math.py 2>&1 | grep -E "^RESULTS|FAIL" | head -6
+"$PY" verify_math.py >/dev/null 2>&1 || fail=1
 
 if [ "$#" -gt 0 ] && [ "$1" = "--compile" ]; then
   echo

@@ -15,8 +15,9 @@ Methods:
   - GIN : parameter-matched plain GIN baseline (same backbone, no
           neuron layer).
 
-3 seeds (42/123/456). Outputs -> spikergnn_results/v38_ogb/<key>.json
-(incremental + resume).
+10 seeds (42/123/456/789/1011/2024/3141/4242/5252/7777; the first three
+are the original v38 numbers, the remaining seven extend the benchmark).
+Outputs -> spikergnn_results/v38_ogb/<key>.json (incremental + resume).
 
 Usage:
   python experiment_v38_ogb.py            # all (OM + GIN)
@@ -67,7 +68,7 @@ DATA_ROOT = "data/OGB"
 os.makedirs(OUT, exist_ok=True)
 os.makedirs(DATA_ROOT, exist_ok=True)
 
-SEEDS = [42, 123, 456]
+SEEDS = [42, 123, 456, 789, 1011, 2024, 3141, 4242, 5252, 7777]
 EPOCHS = 10
 BS = 64
 LAMBDA_SR = 0.5
